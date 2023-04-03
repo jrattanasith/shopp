@@ -1,0 +1,99 @@
+:root {
+  --ff-primary: Arial, sans-serif;
+  --ff-secondary: Arial, Helvetica, sans-serif;
+
+  --clr-bg: #fff;
+  --clr-light: #58b3d2;
+  --clr-dark: #1e2124;
+  --clr-accent: #36393e;
+
+  --fw-reg: 300;
+  --fw-bold: 900;
+
+  --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+    0.125em 0.125 0.25em rgba(0, 0, 0, 0.15);
+}
+
+body {
+  font-family: var(--ff-primary);
+  background-color: var(--clr-dark);
+}
+
+h1, h2, h3, p {
+  color: var(--clr-bg)
+}
+
+.navbar {
+  background-color: var(--clr-accent);
+}
+
+.main-nav {
+  display: flex;
+  list-style-type: none;
+  font-size: 20px;
+  justify-content: center;
+}
+
+.main-nav a:link {
+  margin: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-nav a:visited {
+  color: #fff;
+}
+
+.home-divs {
+  display: block;
+}
+
+.welcome-div {
+  display: inherit;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 25px;
+}
+
+.about-div {
+  display: inherit;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: 25px;
+}
+
+.product-div {
+  display: inherit;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 25px;
+}
+
+footer {
+  display: flex;
+  background-color: var(--clr-accent);
+  justify-content: center;
+}
+
+.footer-elements {
+  display: flex;
+  list-style-type: none;
+  font-size: 50px;
+}
+
+.footer-elements a {
+  margin: 10px;
+}
+
+.footer-elements a:link {
+  margin: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-elements a:visited {
+  color: #fff;
+}
