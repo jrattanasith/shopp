@@ -38,7 +38,8 @@ p {
   display: flex;
   list-style-type: none;
   font-size: 20px;
-  justify-content: center;
+  justify-content: right;
+  padding-right: 50px;
 }
 
 .main-nav a:link {
@@ -73,22 +74,66 @@ p {
 
 .apparel-div {
   display: grid;
-  grid-template-columns: repeat(3, minmax(150px, 1fr));
+  grid-template-columns: repeat(2, minmax(150px, 1fr));
   text-align: center;
   justify-content: center;
   align-items: center;
   margin: 25px;
   background-color: var(--clr-accent);
+
+  max-width: 1500px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
-.apparel-item {
+.apparel-item-div {
   max-width: 600px;
-  padding: 10px;
+  padding-top: 25px;
+  padding-left: 70px;
 }
 
 .apparel-item-home {
   cursor: pointer;
   max-width: 450px;
+  max-height: fit-content;
+}
+
+.accessories-div {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(150px, 1fr));
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 25px;
+  background-color: var(--clr-accent);
+
+  max-width: 1500px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.accessories-item-div {
+  max-width: 600px;
+  padding-top: 25px;
+  margin-left: 50px;
+}
+
+.accessories-item-home {
+  cursor: pointer;
+  max-width: 450px;
+  max-height: fit-content;
+}
+
+.join-div{
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.email-label{
+ display: block;
+ text-align: center;
+ padding-bottom: 50px;
 }
 
 footer {
