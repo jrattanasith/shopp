@@ -56,22 +56,6 @@ p {
   display: block;
 }
 
-.welcome-div {
-  display: inherit;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: 25px;
-}
-
-.about-div {
-  display: inherit;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  margin: 25px;
-}
-
 .apparel-div {
   display: grid;
   grid-template-columns: repeat(2, minmax(150px, 1fr));
@@ -96,6 +80,7 @@ p {
   cursor: pointer;
   max-width: 450px;
   max-height: fit-content;
+  border-radius: 20%;
 }
 
 .accessories-div {
@@ -122,18 +107,23 @@ p {
   cursor: pointer;
   max-width: 450px;
   max-height: fit-content;
+  border-radius: 20%;
 }
 
-.join-div{
+.join-div {
   align-content: center;
   margin-left: auto;
   margin-right: auto;
+  background-color: var(--clr-accent);
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding-top: 25px;
 }
 
-.email-label{
- display: block;
- text-align: center;
- padding-bottom: 50px;
+.email-label {
+  display: block;
+  text-align: center;
+  padding-bottom: 50px;
 }
 
 footer {
@@ -153,6 +143,10 @@ footer {
   margin: 10px;
 }
 
+.footer-elements i:hover {
+  color: var(--clr-light);
+}
+
 .footer-elements a:link {
   margin: 10px;
   color: #fff;
@@ -161,4 +155,50 @@ footer {
 
 .footer-elements a:visited {
   color: #fff;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1143px) {
+  .navbar {
+    align-items: center;
+  }
+
+  .main-nav {
+    justify-content: center;
+  }
+
+  .nav-item {
+    font-size: 17px;
+    justify-content: center;
+  }
+
+  .apparel-div {
+    display: block;
+  }
+
+  .accessories-div {
+    display: block;
+  }
+
+  .apparel-item-home {
+    justify-content: center;
+    align-items: center;
+    max-width: 250px;
+    max-height: 250px;
+    padding: none;
+    margin: none;
+  }
+
+  .apparel-item-div {
+    margin-left: -72px;
+    padding: none;
+  }
+
+  .accessories-item-div {
+  }
+
+  footer ul {
+    padding: none;
+    margin-left: -45px;
+  }
 }
